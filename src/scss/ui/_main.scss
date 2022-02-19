@@ -22,31 +22,38 @@
 
     &__head{
         margin-top: 5rem;
-        width: 47.5rem;
         h3{
-            font-size: 2.9rem;
+            font-size: 2.2rem;
             font-weight: 800;
             color: v.$gris;
+
+            @include m.telefono{
+                font-size: 2.9rem;
+            }
         }
 
         p{
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             color: v.$gris;
             font-weight: 500;
             line-height: 3.2rem;
+
+            @include m.telefono{
+                font-size: 1.8rem;
+            }
         }
     }
 
-    &__head::after{
-        content: '';
-        position: relative;
-        width: 180%;
-        left: 250px;
-        height: .4rem;
-        display: block;
-        background-color: v.$blanco;
-        margin-top: 1.5rem;
-    }
+    // &__head::after{
+    //     content: '';
+    //     position: relative;
+    //     width: 180%;
+    //     left: 250px;
+    //     height: .4rem;
+    //     display: block;
+    //     background-color: v.$blanco;
+    //     margin-top: 1.5rem;
+    // }
 
     &__content{
         margin-top: 3rem;

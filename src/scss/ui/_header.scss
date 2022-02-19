@@ -33,34 +33,54 @@
     }
 
     &__titulo{
-        font-size: 3.4rem;
+        font-size: 1.6rem;
         font-weight: 300;
         text-align: center;
         color: v.$gris;
         line-height: 7.5rem;
-        
-        @include m.tablet{
-            font-size: 4.4rem;
+
+        @include m.telefono{
+            font-size: 2.4rem;
         }
+
+        @include m.tablet{
+            font-size: 3.4rem;
+        }
+
+        // @include m.tablet{
+        //     &::after{
+        //         content: '';
+        //         position: relative;
+        //         right: 123px;
+        //         width: 115%;
+        //         height: .1rem;
+        //         display: block;
+        //         background-color: #16161758;
+        //         margin-top: 1.5rem;
+        //     }
+        // }
+        
     }
 
-    &__titulo::after{
-        content: '';
-        position: relative;
-        right: 123px;
-        width: 115%;
-        height: .1rem;
-        display: block;
-        background-color: #16161758;
-        margin-top: 1.5rem;
-    }
+    // &__titulo::after{
+    //     content: '';
+    //     position: relative;
+    //     right: 123px;
+    //     width: 115%;
+    //     height: .1rem;
+    //     display: block;
+    //     background-color: #16161758;
+    //     margin-top: 1.5rem;
+    // }
 
     &__span{
-        font-size: 4.3rem;
+        font-size: 3.3rem;
         font-weight: bold;
+        display: block;
 
         @include m.tablet{
             font-size: 5.3rem;
+            font-size: 4.3rem;
         }
     }
 
@@ -69,11 +89,13 @@
         text-align: center;
         line-height: 3.2rem;
         color: #000001;
-        width: 48.2rem;
         margin-top: 2.5rem;
         font-weight: 600;
 
         @include m.tablet{
+            font-size: 1.6rem;
+        }
+        @include m.telefono{
             font-size: 1.8rem;
         }
     }
@@ -111,18 +133,18 @@
     }
 
     &__titulo{
-        width: 39.5rem;
         font-weight: 900;
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         color: #000001;
         line-height: 3.6rem;
         margin-bottom: 1.8rem;
-        margin-left: 3rem;
-
+        margin-right: 3rem;
         @include m.tablet{
             font-size: 2.9rem;
             margin-left: unset;
+            width: 39.5rem;
+            margin-right: unset;
         }
     }
 

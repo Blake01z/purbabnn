@@ -16,9 +16,14 @@
     }
 
     &__imagen{
-        width: 40.8rem;
+        width: 38rem;
         height: 51.2rem;
         justify-self: center;
+
+        @include m.tablet{
+            width: 40.8rem;
+            justify-self: center;
+        }
     }
 
     &__titulo{
