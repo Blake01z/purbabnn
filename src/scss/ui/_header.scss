@@ -36,7 +36,7 @@
         font-size: 3.4rem;
         font-weight: 300;
         text-align: center;
-        color: #36414d;
+        color: v.$gris;
         line-height: 7.5rem;
         
         @include m.tablet{
@@ -128,7 +128,7 @@
 
     &__formulario{
         width: 40.7rem;
-        background-color: #ffffff;
+        background-color: v.$blanco;
         margin: 0 auto;
 
         @include m.tablet{
@@ -148,7 +148,7 @@
         display: block;
         font-size: 1.6rem;
         font-weight: bold;
-        color: #36414d;
+        color: v.$gris;
         margin-bottom: 1rem;
     }
 
@@ -188,7 +188,7 @@
     }
 
     &__botton{
-        @include m.boton(#a8895b,v.$blanco);
+        @include m.boton(v.$cafe,v.$blanco);
         margin-bottom: 2rem;
     }
     &__submit{
@@ -206,7 +206,7 @@
     margin-bottom: 1rem;
     display: none;
     color: v.$blanco;
-    background-color: #bb2929;
+    background-color: v.$rojo;
     padding: 1rem;
 }
 
@@ -216,7 +216,7 @@
 
 
 .form__incorrecto{
-    border: 1px solid #bb2929;
+    border: 1px solid v.$rojo;
 }
 
 .warning{
@@ -225,7 +225,7 @@
     line-height: 1.2;
     margin-bottom: 1rem;
     color: v.$blanco;
-    background-color: #bb2929;
+    background-color: v.$rojo;
     padding: 2rem;
     text-align: center;
 }
@@ -236,7 +236,7 @@
     line-height: 1.2;
     margin-bottom: 1rem;
     color: v.$blanco;
-    background-color: #87b32d;
+    background-color: v.$cafe;
     padding: 2rem;
     text-align: center;
 }

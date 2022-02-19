@@ -65,9 +65,9 @@ function versionAvif(done){
 // Tarea para compilar y minificar el codigo js
 function javascript(done){
     src('src/js/**/*.js')
-    // .pipe(sourcemaps.init())
-    // .pipe(terser())
-    // .pipe(sourcemaps.write('.'))
+    .pipe(sourcemaps.init())
+    .pipe(terser())
+    .pipe(sourcemaps.write('.'))
     .pipe(dest('build/js'));
 
     done();

@@ -26,12 +26,12 @@
         h3{
             font-size: 2.9rem;
             font-weight: 800;
-            color: #36414d;
+            color: v.$gris;
         }
 
         p{
             font-size: 1.8rem;
-            color: #36414d;
+            color: v.$gris;
             font-weight: 500;
             line-height: 3.2rem;
         }
@@ -44,7 +44,7 @@
         left: 250px;
         height: .4rem;
         display: block;
-        background-color: #ffffff;
+        background-color: v.$blanco;
         margin-top: 1.5rem;
     }
 
@@ -54,7 +54,7 @@
         h3{
             font-size: 2.2rem;
             font-weight: 500;
-            color: #36414d;
+            color: v.$gris;
         }
     }
 
@@ -62,7 +62,7 @@
         p{
             font-size: 2rem;
             font-weight: 700;
-            color: #a8895b;
+            color: v.$cafe;
             letter-spacing: .2rem;
             margin-top: 1.5rem;
             margin-left: 2rem;
