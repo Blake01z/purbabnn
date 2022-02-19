@@ -18,7 +18,11 @@
 
     &__contenido{
         margin-top: 5.4rem;
-        @include m.grid(2,v.$separacion);
+        display: grid;
+
+        @include m.desktop{
+            @include m.grid(2,v.$separacion);
+        }
     }
 
     &__info{
@@ -29,11 +33,15 @@
     }
 
     &__titulo{
-        font-size: 4.4rem;
+        font-size: 3.4rem;
         font-weight: 300;
         text-align: center;
         color: #36414d;
         line-height: 7.5rem;
+        
+        @include m.tablet{
+            font-size: 4.4rem;
+        }
     }
 
     &__titulo::after{
@@ -48,18 +56,26 @@
     }
 
     &__span{
-        font-size: 5.3rem;
+        font-size: 4.3rem;
         font-weight: bold;
+
+        @include m.tablet{
+            font-size: 5.3rem;
+        }
     }
 
     &__text{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         text-align: center;
         line-height: 3.2rem;
         color: #000001;
         width: 48.2rem;
         margin-top: 2.5rem;
         font-weight: 600;
+
+        @include m.tablet{
+            font-size: 1.8rem;
+        }
     }
 
     &__marcas{
@@ -71,7 +87,11 @@
         margin-top: 4rem;
     
         img{
-            width: 20rem;
+            width: 15rem;
+
+            @include m.tablet{
+                width: 20rem;
+            }
         }
 
         img:nth-child(3){
@@ -83,23 +103,38 @@
 }
 
 .form{
-
-    margin-left: 2rem;
+    margin-top: 5rem;
     border-radius: .5rem;
+    justify-self: center;
+    @include m.desktop{
+        margin-top: unset;
+    }
+
     &__titulo{
         width: 39.5rem;
         font-weight: 900;
         text-align: center;
-        font-size: 2.9rem;
+        font-size: 2.5rem;
         color: #000001;
         line-height: 3.6rem;
         margin-bottom: 1.8rem;
+        margin-left: 3rem;
+
+        @include m.tablet{
+            font-size: 2.9rem;
+            margin-left: unset;
+        }
     }
 
     &__formulario{
         width: 40.7rem;
         height: 45.7rem;
         background-color: #ffffff;
+        margin: 0 auto;
+
+        @include m.tablet{
+            margin: unset;
+        }
     }
 
     &__campo{

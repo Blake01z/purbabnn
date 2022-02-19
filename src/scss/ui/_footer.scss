@@ -1,0 +1,39 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.footer{
+
+    &__contenido{
+        padding: 3rem 0;
+        display: grid;
+        
+        @include m.tablet{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__comun{
+        justify-self: center;
+        color: #36414d;
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-top: 3rem;
+
+        @include m.tablet{
+            margin-top: unset;
+        }
+    }
+
+    &__redes{
+        display: flex;
+        gap: 3rem;
+
+        img{
+           width: 3.4rem;
+           height: 3.4rem;
+        }
+    }
+
+    &__span{
+        margin-left: 2rem;
+    }
+}

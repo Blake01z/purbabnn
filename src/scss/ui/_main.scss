@@ -9,11 +9,15 @@
 
     &__container{
         padding: 5.4rem 0;
-        @include m.grid(2,1rem);
+        
+        @include m.tablet{
+            @include m.grid(2,1rem);
+        }
     }
 
     &__foto{
-        justify-self: center;
+        display: flex;
+        justify-content: center;
     }
 
     &__head{

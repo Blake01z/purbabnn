@@ -3,6 +3,7 @@
 .banner{
     height: 36.2rem;
     @include m.bgImage('../../../build/img/picture-01@2x.png');
+    background-position: center center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,9 +14,13 @@
 
     &__text{
         text-align: center;
-        font-size: 4rem;
+        font-size: 3rem;
         line-height: 6rem;
         font-weight: 500;
         color: v.$blanco;
+
+        @include m.tablet{
+            font-size: 4rem;
+        }
     }
 }
