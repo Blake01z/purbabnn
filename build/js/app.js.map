@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":["document","addEventListener","iniciarApp"],"mappings":"AAAAA,SAASC,iBAAiB,mBAAmB,KAEzCC,eAIJ,MAAMA,WAAa","file":"app.js","sourcesContent":["document.addEventListener('DOMContentLoaded',()=>{\n\n    iniciarApp();\n\n});\n\nconst iniciarApp = () =>{\n\n\n}"]}

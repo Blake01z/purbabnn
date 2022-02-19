@@ -1,0 +1,165 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+    // height:81.7rem;
+    @include m.bgImage('../../../build/img/background@2x.png');
+
+    &__content{
+        padding-bottom: 10rem;
+    }
+
+    &__logo{
+        img{
+            margin: 0 auto;
+            padding-top: 2rem;
+        }
+    }
+
+    &__contenido{
+        margin-top: 5.4rem;
+        @include m.grid(2,v.$separacion);
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__titulo{
+        font-size: 4.4rem;
+        font-weight: 300;
+        text-align: center;
+        color: #36414d;
+        line-height: 7.5rem;
+    }
+
+    &__titulo::after{
+        content: '';
+        position: relative;
+        right: 123px;
+        width: 115%;
+        height: .1rem;
+        display: block;
+        background-color: #16161758;
+        margin-top: 1.5rem;
+    }
+
+    &__span{
+        font-size: 5.3rem;
+        font-weight: bold;
+    }
+
+    &__text{
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 3.2rem;
+        color: #000001;
+        width: 48.2rem;
+        margin-top: 2.5rem;
+        font-weight: 600;
+    }
+
+    &__marcas{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    
+        img{
+            width: 20rem;
+        }
+
+        img:nth-child(3){
+            grid-column: 1/3;
+            margin: 0 auto;
+        }
+    }
+
+}
+
+.form{
+
+    margin-left: 2rem;
+    border-radius: .5rem;
+    &__titulo{
+        width: 39.5rem;
+        font-weight: 900;
+        text-align: center;
+        font-size: 2.9rem;
+        color: #000001;
+        line-height: 3.6rem;
+        margin-bottom: 1.8rem;
+    }
+
+    &__formulario{
+        width: 40.7rem;
+        height: 45.7rem;
+        background-color: #ffffff;
+    }
+
+    &__campo{
+        padding: 1rem 5rem;
+    }
+
+    &__fname{
+        margin-top: 2.8rem;
+    }
+
+    &__label{
+        display: block;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #36414d;
+        margin-bottom: 1rem;
+    }
+
+    &__input,
+    &__select{
+        width: 100%;
+        border: 1px solid #a4a89d;
+        padding: .5rem;
+        border-radius: .3rem; 
+        outline: none; 
+    }
+
+    &__input::placeholder{
+        color: #95989A;
+        font-size: 1.7rem;
+        padding: 1rem;
+    }
+
+    &__select{
+        color: #95989A;
+        font-size: 1.7rem;
+        padding: .5rem;
+    }
+
+    &__poligono::after{
+        content: '';
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        background-image: url(../../../build/img/Polígono\ 1@2x.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        top: -20px;
+        left: 291px;
+        z-index: 1000;
+    }
+
+    &__botton{
+        @include m.boton(#a8895b,v.$blanco);
+    }
+    &__submit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+
+}

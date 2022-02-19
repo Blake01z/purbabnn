@@ -1,0 +1,21 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.banner{
+    height: 36.2rem;
+    @include m.bgImage('../../../build/img/picture-01@2x.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__info{
+        width: 91.9rem;
+    }
+
+    &__text{
+        text-align: center;
+        font-size: 4rem;
+        line-height: 6rem;
+        font-weight: 500;
+        color: v.$blanco;
+    }
+}

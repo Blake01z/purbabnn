@@ -1,0 +1,81 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.main{
+    background-color: #fafafa;
+}
+
+.program{
+
+    &__container{
+        padding: 5.4rem 0;
+        @include m.grid(2,1rem);
+    }
+
+    &__foto{
+        justify-self: center;
+    }
+
+    &__head{
+        margin-top: 5rem;
+        width: 47.5rem;
+        h3{
+            font-size: 2.9rem;
+            font-weight: 800;
+            color: #36414d;
+        }
+
+        p{
+            font-size: 1.8rem;
+            color: #36414d;
+            font-weight: 500;
+            line-height: 3.2rem;
+        }
+    }
+
+    &__head::after{
+        content: '';
+        position: relative;
+        width: 180%;
+        left: 250px;
+        height: .4rem;
+        display: block;
+        background-color: #ffffff;
+        margin-top: 1.5rem;
+    }
+
+    &__content{
+        margin-top: 3rem;
+
+        h3{
+            font-size: 2.2rem;
+            font-weight: 500;
+            color: #36414d;
+        }
+    }
+
+    &__li{
+        p{
+            font-size: 2rem;
+            font-weight: 700;
+            color: #a8895b;
+            letter-spacing: .2rem;
+            margin-top: 1.5rem;
+            margin-left: 2rem;
+        }
+    }
+
+    &__li::before{
+        content: '';
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        background-image: url(../../../build/img/check-icon@2x.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        top: 45px;
+        z-index: 1000;
+    }
+
+}
