@@ -36,30 +36,49 @@
 
             <div class="form">
                 <h2 class="form__titulo">Get a FREE personalized planning session</h2>
+
                 <form action="#" class="form__formulario" id="formulario">
+
                     <div class="form__campo">
-                        <label for="name" class="form__label form__fname">Full Name</label>
-                        <input type="text" class="form__input" name="name" id="name" placeholder="eg: jaison.justus">
+                        <label for="nombre" class="form__label form__fname">Full Name</label>
+                        <p class="form__input-error input__nombre">
+                            El nombre no debe estar vacio o contener acentos ni caracteres especiales!.
+                        </p>
+                        <input type="text" class="form__input input" name="nombre" id="nombre" placeholder="eg: jaison.justus">
                     </div>
+
                     <div class="form__campo">
                         <label for="email" class="form__label">Email</label>
-                        <input type="email" class="form__input" name="email" id="email" placeholder="eg: yourname@gmail.com">
+                        <p class="form__input-error input__email">
+                            Debes de ingresar un email valido.
+                        </p>
+                        <input type="email" class="form__input input" name="email" id="email" placeholder="eg: yourname@gmail.com">
                     </div>
+
                     <div class="form__campo">
                         <label for="telefono" class="form__label">Phone Number</label>
-                        <input type="tel" class="form__input" name="telefono" id="telefono" placeholder="eg: 04713457890">
+                        <p class="form__input-error input__telefono">
+                            El telefono solo puede contener numeros y debe ser igual a 10 digitos.
+                        </p>
+                        <input type="tel" class="form__input input" name="telefono" id="telefono" placeholder="eg: 04713457890">
                     </div>
+
                     <div class="form__campo form__poligono">
                         <label for="interest" class="form__label">Test of interest</label>
-                        <select name="interest" id="interest" class="form__select">
-                            <option selected disabled>-Select-</option>
-                            <option>option 1</option>
-                            <option>option 2</option>
+                        <p class="form__input-error input__interest">
+                            Debes de Seleccionar almenos una opcion.
+                        </p>
+                        <select name="interest" id="interest" class="form__select input">
+                            <option value="" selected disabled>-Select-</option>
+                            <option value="1">option 1</option>
+                            <option value="2">option 2</option>
                         </select>
                     </div>
+                    <div class="alerta"></div>
                     <div class="form__campo form__submit">
                         <input type="submit" class="form__botton" value="SEND">
                     </div>
+
                 </form>
             </div>
 
@@ -211,5 +230,6 @@
 
     
     <script src="build/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 </html>
