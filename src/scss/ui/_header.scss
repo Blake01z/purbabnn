@@ -47,31 +47,31 @@
             font-size: 3.4rem;
         }
 
-        // @include m.tablet{
-        //     &::after{
-        //         content: '';
-        //         position: relative;
-        //         right: 123px;
-        //         width: 115%;
-        //         height: .1rem;
-        //         display: block;
-        //         background-color: #16161758;
-        //         margin-top: 1.5rem;
-        //     }
-        // }
+        @include m.tablet{
+            &::after{
+                content: '';
+                position: relative;
+                right: 123px;
+                width: 115%;
+                height: .1rem;
+                display: block;
+                background-color: #16161758;
+                margin-top: 1.5rem;
+            }
+        }
         
     }
 
-    // &__titulo::after{
-    //     content: '';
-    //     position: relative;
-    //     right: 123px;
-    //     width: 115%;
-    //     height: .1rem;
-    //     display: block;
-    //     background-color: #16161758;
-    //     margin-top: 1.5rem;
-    // }
+    &__titulo::after{
+        content: '';
+        position: relative;
+        right: 123px;
+        width: 115%;
+        height: .1rem;
+        display: block;
+        background-color: #16161758;
+        margin-top: 1.5rem;
+    }
 
     &__span{
         font-size: 3.3rem;
@@ -92,9 +92,6 @@
         margin-top: 2.5rem;
         font-weight: 600;
 
-        @include m.tablet{
-            font-size: 1.6rem;
-        }
         @include m.telefono{
             font-size: 1.8rem;
         }
@@ -135,7 +132,7 @@
     &__titulo{
         font-weight: 900;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         color: #000001;
         line-height: 3.6rem;
         margin-bottom: 1.8rem;
@@ -149,7 +146,6 @@
     }
 
     &__formulario{
-        width: 40.7rem;
         background-color: v.$blanco;
         margin: 0 auto;
 
@@ -193,6 +189,7 @@
         color: #95989A;
         font-size: 1.7rem;
         padding: .5rem;
+        -webkit-appearance: none; -moz-appearance: none; appearance: none;
     }
 
     &__poligono::after{
@@ -205,8 +202,12 @@
         background-size: cover;
         position: relative;
         top: -20px;
-        left: 291px;
+        left: 245px;
         z-index: 1000;
+
+        @include m.tablet{
+            left: 280px;
+        }
     }
 
     &__botton{
@@ -262,3 +263,7 @@
     padding: 2rem;
     text-align: center;
 }
+
+
+
+
